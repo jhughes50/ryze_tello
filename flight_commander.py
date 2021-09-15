@@ -48,3 +48,7 @@ class Commander:
 	def forward(self, x):
 
 		self.send_command('forward '+str(x))
+
+	def stop(self):
+	
+		self.send_command('emergency')
