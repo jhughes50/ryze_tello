@@ -88,6 +88,6 @@ class Commander:
 
 	def set_3Axis_speed(self, x, y, z, speed):
 		#go to x, y, z at "speed"
-		self.send_command('go '+str(x)+' '+str(y)+' '+str(z)+' '+'speed')
+		self.send_command('go '+str(x)+' '+str(y)+' '+str(z)+' '+str(speed))
 
 
