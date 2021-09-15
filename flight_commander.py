@@ -49,6 +49,45 @@ class Commander:
 
 		self.send_command('forward '+str(x))
 
-	def stop(self):
+	def emergency_stop(self):
 	
 		self.send_command('emergency')
+
+	def up(self, x):
+		
+		self.send_command('up '+str(x))
+
+	def down(self, x):
+
+		self.send_command('down '+str(x))
+
+	def right(self, x):
+
+		self.send_command('right '+str(x))
+
+	def left(self, x):
+
+		self.send_command('left '+str(x))
+
+	def back(self, x):
+
+		self.send_command('back '+str(x))
+
+	def cw(self, theta):
+		# Rotate clockwise theta degrees
+		self.send_command('cw '+str(x))
+
+	def ccw(self, theta):
+		# Rotate counter clockwise theta degrees
+		self.send_command('ccw '+str(x))
+
+	def flip(self, direction):
+		# flips ones direction
+		# enter l, r, f or b
+		self.send_command('flip '+str(direction))
+
+	def set_3Axis_speed(self, x, y, z, speed):
+		#go to x, y, z at "speed"
+		self.send_command('go '+str(x)+' '+str(y)+' '+str(z)+' '+'speed')
+
+
