@@ -44,3 +44,7 @@ class Commander:
 	def land(self):
 		
 		self.send_command('land')
+
+	def forward(self, x):
+
+		self.send_command('forward '+str(x))
